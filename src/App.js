@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch  } from 'react-router-dom'
+import UnAuthRoutes from './components/UnAuthedRoutes/UnAuthRoutes'
+import AuthedRoutes from './components/AuthedRoutes/AuthedRoutes'
 
 
 
@@ -26,9 +28,9 @@ class App extends Component {
     return (
      <Router>
        <Switch>
-         {/* <UnAuthRoutes path='/login' {...info} />
+         <UnAuthRoutes path='/login' {...info} />
          <UnAuthRoutes path='/signup' {...info} />
-         <AuthedRoutes path='/' {...info} /> */}
+         <AuthedRoutes path='/' {...this.props} />
        </Switch>
      </Router>
     );

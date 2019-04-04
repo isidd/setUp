@@ -1,5 +1,5 @@
 import React , {Component} from 'react' ;
-import MainRoutes from './MainRoutes'
+import MainRoutes from './MainRoutes/MainRoutes'
 
 class UnAuthRoutes extends Component {
     
@@ -11,7 +11,7 @@ class UnAuthRoutes extends Component {
     }
 
     render(){
-        if(isFetching) {
+        if(this.props.isFetching) {
             return(
             "Loading..!"
         )

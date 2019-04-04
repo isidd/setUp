@@ -7,6 +7,8 @@ const initalState = {
     email : '',
     role : '',
     status : true,
+    isFetching : true,
+    isAuthed : true
 
 }
 
