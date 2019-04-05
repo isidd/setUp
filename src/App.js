@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch  } from 'react-router-dom'
-import UnAuthRoutes from './components/UnAuthedRoutes/UnAuthRoutes'
-import AuthedRoutes from './components/AuthedRoutes/AuthedRoutes'
+import UnAuthRoutes from './containers/UnAuthedRoutes/UnAuthRoutes'
+import AuthedRoutes from './containers/AuthedRoutes/AuthedRoutes'
 
 
 
